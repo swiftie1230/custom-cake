@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B42C497829D3039B00E9782E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C497729D3039B00E9782E /* Main.swift */; };
+		B42C497A29D305D700E9782E /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C497929D305D700E9782E /* Chat.swift */; };
+		B42C497C29D3060A00E9782E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C497B29D3060A00E9782E /* Profile.swift */; };
+		B42C497E29D3065100E9782E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C497D29D3065100E9782E /* Home.swift */; };
+		B42C498429D338E200E9782E /* Minimap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C498329D338E200E9782E /* Minimap.swift */; };
+		B42C498629D33B8E00E9782E /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C498529D33B8E00E9782E /* Search.swift */; };
+		B42C498829D33E6100E9782E /* Storelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C498729D33E6100E9782E /* Storelist.swift */; };
 		B4A0FDEB29D1957300333730 /* KakaoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A0FDEA29D1957300333730 /* KakaoButton.swift */; };
 		B4A0FDED29D197FE00333730 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A0FDEC29D197FE00333730 /* Login.swift */; };
 		B4BCFD5929D1B57E00F29917 /* NaverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BCFD5829D1B57E00F29917 /* NaverButton.swift */; };
+		B4C1FF1D29D4BB5D00B068AB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1FF1C29D4BB5D00B068AB /* MapView.swift */; };
 		B4CD954329C9CA05003F931B /* custom_cake_frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD954229C9CA05003F931B /* custom_cake_frontendApp.swift */; };
 		B4CD954529C9CA05003F931B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD954429C9CA05003F931B /* ContentView.swift */; };
 		B4CD954729C9CA09003F931B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CD954629C9CA09003F931B /* Assets.xcassets */; };
@@ -23,9 +31,18 @@
 		7D5113F5BBEB0FC59BD058F9 /* Pods-custom-cake-frontend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-custom-cake-frontend.release.xcconfig"; path = "Target Support Files/Pods-custom-cake-frontend/Pods-custom-cake-frontend.release.xcconfig"; sourceTree = "<group>"; };
 		AFA1EF1A226A6693ACB716B8 /* Pods_custom_cake_frontend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_custom_cake_frontend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B414F70829D185C3005672F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B42C497729D3039B00E9782E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		B42C497929D305D700E9782E /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		B42C497B29D3060A00E9782E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B42C497D29D3065100E9782E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B42C498329D338E200E9782E /* Minimap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimap.swift; sourceTree = "<group>"; };
+		B42C498529D33B8E00E9782E /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		B42C498729D33E6100E9782E /* Storelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storelist.swift; sourceTree = "<group>"; };
 		B4A0FDEA29D1957300333730 /* KakaoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoButton.swift; sourceTree = "<group>"; };
 		B4A0FDEC29D197FE00333730 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		B4BCFD5829D1B57E00F29917 /* NaverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverButton.swift; sourceTree = "<group>"; };
+		B4C1FF1C29D4BB5D00B068AB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B4C1FF1E29D4C0E600B068AB /* DummyLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DummyLocation.gpx; sourceTree = "<group>"; };
 		B4CD953F29C9CA05003F931B /* custom-cake-frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-cake-frontend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CD954229C9CA05003F931B /* custom_cake_frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_cake_frontendApp.swift; sourceTree = "<group>"; };
 		B4CD954429C9CA05003F931B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +71,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B42C497F29D3069400E9782E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B42C497929D305D700E9782E /* Chat.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B42C498029D3069A00E9782E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B42C497B29D3060A00E9782E /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		B4A0FDE929D194BD00333730 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +101,10 @@
 		B4BCFD5B29D1CD0C00F29917 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B42C497729D3039B00E9782E /* Main.swift */,
+				B42C497D29D3065100E9782E /* Home.swift */,
+				B4C1FF1F29D4D16D00B068AB /* Map */,
+				B42C498729D33E6100E9782E /* Storelist.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -75,8 +112,19 @@
 		B4BCFD5C29D1CD1700F29917 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				B42C498529D33B8E00E9782E /* Search.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		B4C1FF1F29D4D16D00B068AB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B42C498329D338E200E9782E /* Minimap.swift */,
+				B4C1FF1C29D4BB5D00B068AB /* MapView.swift */,
+				B4C1FF1E29D4C0E600B068AB /* DummyLocation.gpx */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		B4CD953629C9CA05003F931B = {
@@ -106,6 +154,8 @@
 				B4A0FDE929D194BD00333730 /* Login */,
 				B4BCFD5B29D1CD0C00F29917 /* Main */,
 				B4BCFD5C29D1CD1700F29917 /* Search */,
+				B42C497F29D3069400E9782E /* Chat */,
+				B42C498029D3069A00E9782E /* Profile */,
 				B4CD954629C9CA09003F931B /* Assets.xcassets */,
 				B4CD954829C9CA09003F931B /* Preview Content */,
 			);
@@ -243,11 +293,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42C498629D33B8E00E9782E /* Search.swift in Sources */,
 				B4BCFD5929D1B57E00F29917 /* NaverButton.swift in Sources */,
 				B4D8CD3B29D179C500A728D7 /* Loginlogo.swift in Sources */,
+				B42C497E29D3065100E9782E /* Home.swift in Sources */,
 				B4A0FDED29D197FE00333730 /* Login.swift in Sources */,
 				B4CD954529C9CA05003F931B /* ContentView.swift in Sources */,
 				B4CD954329C9CA05003F931B /* custom_cake_frontendApp.swift in Sources */,
+				B42C497A29D305D700E9782E /* Chat.swift in Sources */,
+				B4C1FF1D29D4BB5D00B068AB /* MapView.swift in Sources */,
+				B42C497829D3039B00E9782E /* Main.swift in Sources */,
+				B42C498829D33E6100E9782E /* Storelist.swift in Sources */,
+				B42C497C29D3060A00E9782E /* Profile.swift in Sources */,
+				B42C498429D338E200E9782E /* Minimap.swift in Sources */,
 				B4A0FDEB29D1957300333730 /* KakaoButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +439,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "custom-cake-frontend/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -411,6 +470,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "custom-cake-frontend/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

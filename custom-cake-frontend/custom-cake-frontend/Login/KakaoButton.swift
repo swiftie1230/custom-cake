@@ -13,13 +13,13 @@ struct KakaoButton: View {
         Button {
             if (UserApi.isKakaoTalkLoginAvailable()) {
             UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
-                print(oauthToken!)
-                print(error!)
+                print(oauthToken as Any)
+                print(error as Any)
                 }
             } else {
                 UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
-                    print(oauthToken!)
-                print(error!)
+                    print(oauthToken as Any)
+                    print(error as Any)
                 }
             }
         } label : {
