@@ -9,19 +9,22 @@ import SwiftUI
 
 struct Main: View {
     var body: some View {
-        ZStack{
+        NavigationStack {
             TabView {
                 Home()
                     .tabItem {
-                        Label("Home", systemImage: "house")
+                        Image(systemName: "house")
+                        Text("Home")
                     }
                 Chat()
                     .tabItem {
-                        Label("Message", systemImage: "message")
+                        Image(systemName: "message")
+                        Text("message")
                     }
                 Profile()
                     .tabItem {
-                        Label("Profile", systemImage: "person")
+                        Image(systemName: "person")
+                        Text("profile")
                     }
             }
         }

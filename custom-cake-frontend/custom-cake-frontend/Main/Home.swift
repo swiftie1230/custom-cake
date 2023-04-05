@@ -21,9 +21,9 @@ struct Home: View {
                 
                 GeometryReader { proxy in
                     let frame = proxy.frame(in: .global)
-                        
+                    
                     ZStack {
-                        Minimap().edgesIgnoringSafeArea(.all)
+                        Minimap().edgesIgnoringSafeArea(.top)
                         
                         VStack {
                             HStack {
@@ -34,11 +34,12 @@ struct Home: View {
                                 .cornerRadius(5)
                                 .textFieldStyle(.roundedBorder)
                                 
-                                    
-                                NavigationLink (destination: Search(),
-                                                    label : {
-                                    Text("옵션 검색").foregroundColor(.white)
-                                })
+                                
+                                NavigationLink (
+                                    destination: Search(),
+                                    label : {
+                                        Text("옵션 검색").foregroundColor(.white)
+                                    })
                                 .frame(height: 32)
                                 .frame(width: 75)
                                 .background(Color.black)
@@ -67,36 +68,37 @@ struct Home: View {
                             }
                             .frame(maxHeight: .infinity, alignment: .top)
                         }
-                        .offset(y: height - 200)
-                        .offset(y: -offset > 0 ? -offset <= (height-200) ? offset : -(height - 200) : 0)
-                        .gesture(DragGesture().updating($gestureOffset, body: {
-                            value, out, _ in
-                            
-                            out = value.translation.height
-                            onChange()
-                        }).onEnded({ value in
-                            
-                            let maxHeight = height - 100
-                            
-                            withAnimation {
-                                if -offset > 200 && -offset < maxHeight / 2 + 100 {
-                                    offset = -(maxHeight / 2) + 100
-                                } else if -offset > maxHeight / 2 + 100 {
-                                    offset = -maxHeight
-                                } else {
-                                    offset = 0
+                            .offset(y: height - 200)
+                            .offset(y: -offset > 0 ? -offset <= (height-200) ? offset : -(height - 200) : 0)
+                            .gesture(DragGesture().updating($gestureOffset, body: {
+                                value, out, _ in
+                                
+                                out = value.translation.height
+                                onChange()
+                            }).onEnded({ value in
+                                
+                                let maxHeight = height - 100
+                                
+                                withAnimation {
+                                    if -offset > 200 && -offset < maxHeight / 2 + 100 {
+                                        offset = -(maxHeight / 2) + 100
+                                    } else if -offset > maxHeight / 2 + 100 {
+                                        offset = -maxHeight
+                                    } else {
+                                        offset = 0
+                                    }
                                 }
-                            }
-                            
-                            // Storing Last Offset
-                            // So that the gesture can continue from the last position
-                            lastOffset = offset
-                        })
-                                )
+                                
+                                // Storing Last Offset
+                                // So that the gesture can continue from the last position
+                                lastOffset = offset
+                            })
+                                    )
                     )
                 }
-                .ignoresSafeArea(.all, edges: .bottom)
+                //.ignoresSafeArea(edges: .bottom)
             }
+            .navigationBarHidden(true)
         }
     }
     
