@@ -9,15 +9,14 @@ import SwiftUI
 
 struct Search: View {
     
-    @State var location: String = " "
     @Environment(\.presentationMode) var presentation
+    @State var location: String = " "
+    //@Binding var selectedDates: Set<DateComponents>
     
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                VStack (spacing: 30) {
-                    Options()
-                    
+                VStack (spacing: 30) {                    
                     VStack {
                         
                         Text("주소 검색")
@@ -40,7 +39,6 @@ struct Search: View {
                             
                             NavigationLink (
                                 destination: WebView(url: "https://swiftie1230.github.io/Kakao-address/")
-                                    // AddressWeb()
                             ) {
                                 Text("주소 검색")
                                     .foregroundColor(Color.white)

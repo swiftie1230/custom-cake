@@ -8,25 +8,39 @@
 import SwiftUI
 
 struct Schedule: View {
-    @State private var selectedDate = Date()
-    
+    @Environment(\.calendar) var calendar
+    @State private var selectedDates: Set<DateComponents> = []
+    @State var columnCount: Int = 3
+   
     var body: some View {
         VStack {
             Text("픽업 날짜 검색")
                 .font(.title)
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(15)
             
-            DatePicker(
-                "DatePicker", selection: $selectedDate,
-                      //in: ...Date()
-                displayedComponents: [.date, .hourAndMinute]
+            MultiDatePicker(
+                "DatePicker", selection: $selectedDates,
+                      in: Date()...
             )
-            .datePickerStyle(.graphical)
+            
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columnCount) ) {
+                    ForEach (selectedDatesTotal, id: \.self) {
+                        OptionLabel(text: $0)
+                    }
+            }
+            
+        }
         .padding(15)
+    }
+    
+
+    var selectedDatesTotal: Array<String> {
+        selectedDates.compactMap { components in
+            calendar.date(from: components)!.formatted(date: .numeric, time: .omitted)
         }
     }
+
 }
 
 struct Schedule_Previews: PreviewProvider {
