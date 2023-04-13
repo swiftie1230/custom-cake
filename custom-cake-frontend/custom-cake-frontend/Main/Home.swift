@@ -16,7 +16,7 @@ struct Home: View {
     
     var body: some View {
         
-        NavigationView {
+        NavigationStack {
             ZStack {
                 
                 GeometryReader { proxy in
@@ -96,7 +96,6 @@ struct Home: View {
                                     )
                     )
                 }
-                //.ignoresSafeArea(edges: .bottom)
             }
             .navigationBarHidden(true)
         }

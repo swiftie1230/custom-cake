@@ -27,15 +27,6 @@ struct OptionLabel/*<Content: View>*/: View {
     var body: some View {
         HStack{
             Text(text)
-            /*
-            Button{
-                
-            } label : {
-                Image(systemName: "xmark").resizable()
-                    .frame(width: 10.0, height: 10.0)
-                    .foregroundColor(Color.primary)
-            }
-             */
         }
         .padding(EdgeInsets(top: 8, leading: 10, bottom: 8, trailing: 10))
         .background(Color.defaultLightGray)

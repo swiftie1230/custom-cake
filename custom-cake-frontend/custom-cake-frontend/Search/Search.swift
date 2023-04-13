@@ -11,7 +11,6 @@ struct Search: View {
     
     @Environment(\.presentationMode) var presentation
     @State var location: String = " "
-    //@Binding var selectedDates: Set<DateComponents>
     
     var body: some View {
         NavigationView {
